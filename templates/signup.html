@@ -1,0 +1,53 @@
+{% extends "index.html" %} {% block content %}
+<div style="height: 720px">
+    <div class="container h-100">
+
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-10 col-md-8 col-lg-6">
+                <!-- Form -->
+                <form action="" method="post">
+                    {{ form.hidden_tag() }}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4">
+                            <h2>Join today.</h2>
+                        </legend>
+                        <div class="row form-group pt-4">
+                            <div class="col-4">{{ form.username.label(class="form-control-plaintext") }}</div>
+                            <div class="col-8">{{ form.username(class="form-control") }}</div>
+                        </div>
+                        <div class="row form-group pt-4">
+                            <div class="col-4">{{ form.email.label(class="form-control-plaintext") }}</div>
+                            <div class="col-8">{{ form.email(class="form-control") }}</div>
+                        </div>
+                        <div class="row form-group pt-4">
+                            <div class="col-4">{{ form.password.label(class="form-control-plaintext") }}</div>
+                            <div class="col-8">{{ form.password(class="form-control") }}</div>
+                        </div>
+                        <div class="row form-group pt-4">
+                            <div class="col-4">{{ form.retype_password.label(class="form-control-plaintext") }}</div>
+                            <div class="col-8">{{ form.retype_password(class="form-control") }}</div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        {{ form.submit(class="btn btn-secondary my-4") }}
+                    </div>
+                </form>
+                <!-- Form end -->
+                <div class="row border-top pt-3">
+                    <div class="col-4">
+                        <small class="text-muted ">
+                            Already an user?</small>
+                    </div>
+                    <div class="col-8"><button class="btn btn-sm btn-outline-secondary"
+                            href="{{ url_for('login') }}">Log
+                            in</button></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+{% endblock content %}

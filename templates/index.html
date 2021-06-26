@@ -11,27 +11,46 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <title></title>
-
 </head>
 
 <body>
-
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">500-only</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="flex">
+                    <button class="btn btn-outline-light btn-sm" type="submit">Log in</button>
+                    <button class="btn btn-light btn-sm mx-4" type="submit">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
     {% block navigation %} {% endblock navigation %}
-
     {% block content %} {% endblock content %}
 
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
-
-                <div class="col-lg-4 text-center py-4">
-                    <p class="text-white">+91-8888888888</p>
+                <div class="col-md-4 text-center pt-4">
+                    <p class="text-white-50">+91-8888888888</p>
                 </div>
-                <div class="col-lg-4 text-center py-4">
-                    <h5 class="section-heading text-white">Let's Get In Touch!</h5>
+                <div class="col-md-4 text-center pt-4">
+                    <h5 class="section-heading text-white-50">Let's Get In Touch!</h5>
                 </div>
-                <div class="col-lg-4 text-center py-4">
-                    <p class="text-white">rahul@abc.in</p>
+                <div class="col-md-4 text-center pt-4">
+                    <p class="text-white-50">rahul@abc.in</p>
                 </div>
             </div>
         </div>
