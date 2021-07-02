@@ -1,2 +1,4 @@
 myvenv
 .vscode
+__pycache__
+blog.db
